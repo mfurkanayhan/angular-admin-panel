@@ -1,0 +1,37 @@
+.dashboard-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 144px);
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #000;
+  min-width: 320px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.stat-box {
+  background-color: #292929;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.card-title {
+  color: #fff;
+}
+
+.card-value {
+  font-size: 1.5rem;
+  color: white;
+}

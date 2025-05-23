@@ -1,0 +1,76 @@
+/* Arka plan */
+body, .container, mat-sidenav-container {
+  background-image: url('/assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: calc(100vh - 64px);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: calc(100vh - 64px);
+  }
+}
+
+
+/* Toolbar */
+mat-toolbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  font-weight: 500;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* Sidebar */
+mat-sidenav {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  min-width: 200px;
+  max-width: 250px;
+}
+
+/* Sidebar linkleri */
+mat-nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 12px 16px;
+  display: block;
+}
+
+/* İçerik kutusu */
+.content {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 32px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  text-align: center;
+}

@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+/* Sayfa arka planı */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* Toolbar */
+mat-toolbar {
+  background-color: #2e2e2e;
+  color: #f4f4f4;
+  padding: 0 16px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Sidebar linkleri */
+mat-nav-list a {
+  color: #2e2e2e;
+  font-weight: 500;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+/* Aktif link tonu */
+mat-nav-list a.active {
+  background-color: #dedede;
+}
+
+/* Butonlar */
+button[mat-button], button[mat-raised-button] {
+  background-color: #4f4f4f;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button[mat-button]:hover, button[mat-raised-button]:hover {
+  background-color: #3a3a3a;
+}
+
+/* Kartlar */
+mat-card {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 16px;
+  border: 1px solid #d1d1d1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlıklar */
+h1, h2, h3 {
+  color: #1c1c1c;
+}

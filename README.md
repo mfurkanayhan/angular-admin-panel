@@ -1,59 +1,80 @@
-# AngularAdminPanel
+# 🌤️ Admin Panel with Angular Standalone + Material UI
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+This project is a responsive Admin Panel built with Angular Standalone architecture and Angular Material. It includes:
+- A modern login screen with a blurred background.
+- A responsive layout with a collapsible sidebar.
+- Dynamic Dashboard and Users pages.
+- Mobile-first design principles.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Features
+
+- ✅ Modern glassmorphism UI
+- ✅ Responsive layout with automatic sidebar toggle on mobile
+- ✅ Standalone Angular components
+- ✅ Lazy loaded routes
+- ✅ Material components used modularly
+- ✅ Live user data fetched via HTTP
+
+---
+
+## 🖥️ Web View
+
+### 🔐 Login Page
+![web-login](src/assets/screenshots/web-login.png)
+
+### 📊 Dashboard Page
+![web-dashboard](src/assets/screenshots/web-dashboard.png)
+
+### 👥 Users Page (Before Fetching)
+![web-users-before](src/assets/screenshots/web-users-before.png)
+
+### 👥 Users Page (After Fetching)
+![web-users-after](src/assets/screenshots/web-users-after.png)
+
+---
+
+## 📱 Mobile View
+
+### 🔐 Login Page (Mobile)
+![mobile-login](src/assets/screenshots/mobile-login.png)
+
+### 📊 Dashboard Page (Mobile)
+![mobile-dashboard](src/assets/screenshots/mobile-dashboard.png)
+
+### 👥 Users Page (Before Fetching - Mobile)
+![mobile-users-before](src/assets/screenshots/mobile-users-before.png)
+
+### 👥 Users Page (After Fetching - Mobile)
+![mobile-users-after](src/assets/screenshots/mobile-users-after.png)
+
+---
+
+## 🔧 Technologies Used
+
+- Angular 17 Standalone Architecture
+- Angular Material UI
+- TypeScript
+- RxJS
+- Responsive Design via CSS Flexbox
+- BreakpointObserver for adaptive layout
+
+---
+
+## 📝 Notes
+
+- Users are fetched from: `https://jsonplaceholder.typicode.com/users`
+- `HttpClient` is imported and used in a fully standalone manner.
+- Sidebar automatically closes on navigation when on mobile screen sizes.
+- "Uses Angular Material components (toolbar, sidenav, buttons, cards etc.), but with fully customized CSS for modern glassmorphism design."
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/mfurkanayhan/angular-admin-panel.git
+cd admin-panel
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

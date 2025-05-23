@@ -1,0 +1,88 @@
+/* Container for everything */
+.users-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  min-height: 80vh;
+  transition: all 0.3s ease;
+}
+
+.users-wrapper.filled {
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* Main card for users header */
+.main-user-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  transition: margin 0.3s ease;
+}
+
+.users-wrapper.filled .main-user-card {
+  margin: 24px auto;
+}
+
+/* Title */
+.title {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Content */
+.content {
+  background-color: #292929;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+button[mat-raised-button] {
+  background-color: #67656578 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+button[mat-raised-button]:hover {
+  background-color: #a4a4a48a !important;
+}
+
+
+/* Empty text */
+.empty-text {
+  margin-top: 16px;
+  color: #eee;
+  font-size: 14px;
+}
+
+/* List of user cards */
+.user-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 32px;
+}
+
+/* Individual user card */
+.user-sub-card {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
